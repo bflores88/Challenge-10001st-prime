@@ -7,9 +7,7 @@ module.exports = function(n) {
   let nthPrime = 0;
 
   function testPrime(number) {
-    if (number === 1) {
-      return false;
-    } else if (number === 2) {
+    if (number === 2) {
       return true;
     } else {
       for (let x = 2; x < number; x++) {
