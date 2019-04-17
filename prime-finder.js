@@ -2,21 +2,18 @@
 
 module.exports = function(n) {
   // do work here
-  let count = 0;
-  let start = 2;
+  let count = 1;
+  let start = 3;
   let nthPrime = 0;
 
   function testPrime(number) {
-    if (number === 2) {
-      return true;
-    } else {
-      for (let x = 2; x < number; x++) {
-        if (number % x === 0) {
-          return false;
-        }
+    for (let x = 2; x < number; x++) {
+      if (number % x === 0) {
+        return false;
       }
-      return true;
     }
+
+    return true;
   }
 
   while (count !== n) {
