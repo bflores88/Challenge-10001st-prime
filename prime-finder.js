@@ -4,7 +4,7 @@ module.exports = function(n) {
   // do work here
   let count = 1;
   let start = 3;
-  let nthPrime = 0;
+  let nthPrime = 2;
 
   function testPrime(number) {
     for (let x = 2; x < number; x++) {
